@@ -106,10 +106,7 @@ void pushFront(List * list, void * data) {
     }
 
     list->head = a;
-
-    if ( list->head->next == NULL){
-        list->tail = list->head;
-    }
+    if ( list->head->next == NULL) list->tail = list->head;
 }
 
 void pushBack(List * list, void * data) {
