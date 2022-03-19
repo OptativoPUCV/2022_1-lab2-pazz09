@@ -52,7 +52,6 @@ void * firstList(List * list) {
 
 void * nextList(List * list) {
 
-    if(!list->current)
 
 
 
@@ -79,8 +78,6 @@ void pushFront(List * list, void * data) {
     list->head = d;
     d->prev = NULL;
     list->tail++;
-
-    return d->data;
 
 }
 
