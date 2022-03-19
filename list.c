@@ -47,11 +47,12 @@ void * firstList(List * list) {
     }
     list->current = list->head;
 
-    return ( list->head->data);
+    return list->head->data;
 }
 
 void * nextList(List * list) {
 
+    if(!list->current)
 
 
 
@@ -73,13 +74,13 @@ void pushFront(List * list, void * data) {
     d = createNode(data);
     d->next = list->head;
     if ( list->head ){
-    list->head->prev = d;
+        list->head->prev = d;
     }
     list->head = d;
     d->prev = NULL;
     list->tail++;
 
-    return d;
+    return d->data;
 
 }
 
