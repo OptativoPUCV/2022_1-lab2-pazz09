@@ -77,6 +77,9 @@ void pushFront(List * list, void * data) {
     }
     list->head = d;
     d->prev = NULL;
+    list->tail++;
+
+    return d->data;
 
 }
 
@@ -105,6 +108,9 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
+
+
+
     return NULL;
 }
 
