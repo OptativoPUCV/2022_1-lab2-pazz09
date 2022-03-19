@@ -98,6 +98,8 @@ void pushFront(List * list, void * data) {
         
         list->current = list->head;
 
+        list->head = a;
+
         list->head->next = a;
 
         list->current->prev = list->head;
