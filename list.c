@@ -42,13 +42,20 @@ List * createList() {
 
 void * firstList(List * list) {
 
-    if (list->head && list->head->data){
-        list->current = list->head;
+    if (!list->head){
+        return NULL;
     }
-    return list->current;
+    list->current = list->head;
+    
+    return ( list->head->data);
 }
 
 void * nextList(List * list) {
+
+
+
+
+
     return NULL;
 }
 
@@ -61,6 +68,12 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, void * data) {
+
+    
+
+
+
+
 }
 
 void pushBack(List * list, void * data) {
@@ -69,6 +82,12 @@ void pushBack(List * list, void * data) {
 }
 
 void pushCurrent(List * list, void * data) {
+
+
+
+
+
+
 }
 
 void * popFront(List * list) {
